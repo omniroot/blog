@@ -1,0 +1,15 @@
+.button {
+  font-weight: bold;
+  color: black;
+  background-color: var(--foreground);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 2px 5px;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
