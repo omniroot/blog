@@ -11,7 +11,7 @@ const MainPage = () => {
     <div className={styles.mainpage}>
       {/* Main News Card */}
       <div className={styles.mainnews}>
-        <BigCard image="/src/assets/test.png">
+        <BigCard image="/assets/test.png">
           <span>ArchLinux Dots update to v2!</span>
           <Button
             onClick={() => window.open("https://github.com/gamenarkyt/.dots")}
@@ -39,7 +39,7 @@ const MainPage = () => {
       <span>soon...</span>
       <img
         className={styles.soon}
-        src="/src/assets/tea.gif"
+        src="/assets/tea.gif"
         alt="anime girl drink tea"
       />
     </div>
