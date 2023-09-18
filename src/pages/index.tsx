@@ -32,6 +32,7 @@ export const router = createBrowserRouter(
           </Suspense>
         }
       />
+      <Route path="*" element={<span>404: Page not found</span>} />
     </Route>
   )
 );
