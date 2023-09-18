@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/2.png",
+    "title": "title 1 ",
+    "about": "about 1",
+    "tags": ["tag1", "tag2"]
+  },
+  {
+    "id": 2,
+    "image": "/assets/1.png",
+    "title": "title 1 ",
+    "about": "about 1",
+    "tags": ["tag1", "tag2"]
+  },
+  {
+    "id": 3,
+    "image": "/assets/test.png",
+    "title": "title 1 ",
+    "about": "about 1",
+    "tags": ["tag1", "tag2"]
+  }
+]

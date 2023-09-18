@@ -1,11 +1,17 @@
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { BigCard } from "../../components/ui/BigCard/BigCard";
 import { Button } from "../../components/ui/Button/Button";
 import { Card } from "../../components/ui/Card/Card";
 import styles from "./TestPage.module.scss";
 
+import arch from "/public/posts/archlinux-dost/arch.md?raw";
+import remarkGfm from "remark-gfm";
+
 const TestPage = () => {
   return (
     <div className={styles.testpage}>
+      <span>Test markdown library and assets file loader for blog posts:</span>
+      <ReactMarkdown children={arch} remarkPlugins={[remarkGfm]} />
       <span>Button:</span>
       <Button width="100px" onClick={() => alert(1)}>
         Click me
