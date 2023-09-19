@@ -59,6 +59,7 @@ const MainPage = () => {
       </div>
       {/* Posts */}
       <Heading text="Posts">
+        <span>Sort: </span>
         <Button onClick={sortNormal}>normal</Button>
         <Button onClick={sortByAbs}>abs</Button>
         <Button onClick={sortByTag}>tag</Button>
