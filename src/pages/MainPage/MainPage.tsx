@@ -9,6 +9,11 @@ import data from "@/data/data.json";
 
 const MainPage = () => {
   const [posts, setPosts] = useState(data);
+  const normalSortPosts = [...posts];
+
+  const sortNormal = () => {
+    setPosts(normalSortPosts);
+  };
 
   const sortByAbs = () => {
     const next = [...posts];
@@ -55,6 +60,7 @@ const MainPage = () => {
       </div>
       {/* Posts */}
       <Heading text="Posts">
+        <Button onClick={sortNormal}>normal</Button>
         <Button onClick={sortByAbs}>abs</Button>
         <Button onClick={sortByTag}>tag</Button>
       </Heading>
