@@ -8,15 +8,15 @@ sudo pacman -S mesa vulkan-radeon  vulkan-icd-loader mesa-vdpau  vulkan-mesa-lay
 
 ## Установка русской раскладки
 
-Добавить нужную раскладку в `/etc/X11/xorg.conf.d/00-keyboard.conf`
+Добавить нужную раскладку в **/etc/X11/xorg.conf.d/00-keyboard.conf**
 
 ```bash
 Section "InputClass"
-        Identifier "system-keyboard"
-        MatchIsKeyboard "on"
-        Option "XkbLayout" "us, ru"
-        Option "XkbModel" "pc105+inet"
-        Option "XkbOptions" "grp:caps_toggle"
+    Identifier "system-keyboard"
+    MatchIsKeyboard "on"
+    Option "XkbLayout" "us, ru"
+    Option "XkbModel" "pc105+inet"
+    Option "XkbOptions" "grp:caps_toggle"
 EndSection
 ```
 
