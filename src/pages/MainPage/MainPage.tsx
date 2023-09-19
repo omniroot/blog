@@ -9,10 +9,9 @@ import data from "@/data/data.json";
 
 const MainPage = () => {
   const [posts, setPosts] = useState(data);
-  const normalSortPosts = [...posts];
 
   const sortNormal = () => {
-    setPosts(normalSortPosts);
+    setPosts(data);
   };
 
   const sortByAbs = () => {
