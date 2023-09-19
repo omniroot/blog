@@ -8,13 +8,17 @@ interface IProps {
   title: string;
   about?: string;
   tags?: string[];
-  link: string;
+  link?: string;
 }
 
 const Card: FC<IProps> = ({ image, title: name, about, tags, link }) => {
   const navigate = useNavigate();
   const onCardClickHandler = () => {
-    navigate(link);
+    if (link) {
+      navigate(link);
+    } else {
+      console.log("you lost link attribute");
+    }
   };
 
   return (
