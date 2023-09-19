@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BigCard } from "../../components/ui/BigCard/BigCard";
 import { Button } from "../../components/ui/Button/Button";
 import { Card } from "../../components/ui/Card/Card";
@@ -7,6 +8,34 @@ import styles from "./MainPage.module.scss";
 import data from "@/data/data.json";
 
 const MainPage = () => {
+  const [posts, setPosts] = useState(data);
+
+  const sortByAbs = () => {
+    const next = [...posts];
+    next.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+      if (a.title > b.title) {
+        return 1;
+      }
+      return 0;
+    });
+    // next.sort();
+    console.log(next);
+
+    setPosts(next);
+  };
+
+  const sortByTag = () => {
+    const next = [...posts];
+    next.sort((a, b) => {
+      return a.title - b.title;
+    });
+    // next.sort();
+    setPosts(next);
+  };
+
   return (
     <div className={styles.mainpage}>
       {/* Main News Card */}
@@ -21,9 +50,12 @@ const MainPage = () => {
         </BigCard>
       </div>
       {/* Posts */}
-      <Heading>Posts</Heading>
+      <Heading text="Posts">
+        <Button onClick={sortByAbs}>abs</Button>
+        <Button onClick={sortByTag}>tag</Button>
+      </Heading>
       <div className={styles.posts}>
-        {data.map((post) => {
+        {posts.map((post) => {
           return (
             <Card
               key={post.id}
@@ -31,11 +63,12 @@ const MainPage = () => {
               title={post.title}
               about={post.about}
               tags={post.tags}
+              link={post.link}
             />
           );
         })}
       </div>
-      <Heading>Roadmap</Heading>
+      <Heading text="Roadmap" />
       <span>soon...</span>
       <img
         className={styles.soon}
