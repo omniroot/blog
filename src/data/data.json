@@ -2,22 +2,81 @@
   {
     "id": 1,
     "image": "/assets/2.png",
-    "title": "title 1 ",
-    "about": "about 1",
-    "tags": ["tag1", "tag2"]
+    "title": "ArchLinux After Setup",
+    "about": "Command for initial setup arch",
+    "tags": ["archlinux"],
+    "link": "/post/archlinux-initial-setup"
   },
   {
     "id": 2,
     "image": "/assets/1.png",
-    "title": "title 1 ",
-    "about": "about 1",
-    "tags": ["tag1", "tag2"]
+    "title": "My Code config",
+    "about": "My configuration for Visual Studio Code",
+    "tags": ["vscode"],
+    "link": "/post/vscode-config"
   },
   {
     "id": 3,
     "image": "/assets/test.png",
-    "title": "title 1 ",
-    "about": "about 1",
-    "tags": ["tag1", "tag2"]
+    "title": "Ballpapers source",
+    "about": "Site with best anime wallpapers",
+    "tags": ["wallpaper"],
+    "link": "/post/wallpapers"
+  },
+  {
+    "id": 4,
+    "image": "/assets/2.png",
+    "title": "ArchLinux After Setup",
+    "about": "Command for initial setup arch",
+    "tags": ["archlinux"],
+    "link": "/post/archlinux-initial-setup"
+  },
+  {
+    "id": 5,
+    "image": "/assets/1.png",
+    "title": "VS Code config",
+    "about": "My configuration for Visual Studio Code",
+    "tags": ["vscode"],
+    "link": "/post/vscode-config"
+  },
+  {
+    "id": 6,
+    "image": "/assets/test.png",
+    "title": "Wallpapers source",
+    "about": "Site with best anime wallpapers",
+    "tags": ["wallpaper"],
+    "link": "/post/wallpapers"
+  },
+  {
+    "id": 7,
+    "image": "/assets/2.png",
+    "title": "ArchLinux After Setup",
+    "about": "Command for initial setup arch",
+    "tags": ["archlinux"],
+    "link": "/post/archlinux-initial-setup"
+  },
+  {
+    "id": 8,
+    "image": "/assets/1.png",
+    "title": "VS Code config",
+    "about": "My configuration for Visual Studio Code",
+    "tags": ["vscode"],
+    "link": "/post/vscode-config"
+  },
+  {
+    "id": 9,
+    "image": "/assets/test.png",
+    "title": "Wallpapers source",
+    "about": "Site with best anime wallpapers",
+    "tags": ["wallpaper"],
+    "link": "/post/wallpapers"
+  },
+  {
+    "id": 10,
+    "image": "/assets/test.png",
+    "title": "Wallpapers source",
+    "about": "Site with best anime wallpapers",
+    "tags": ["wallpaper"],
+    "link": "/post/wallpapers"
   }
 ]
