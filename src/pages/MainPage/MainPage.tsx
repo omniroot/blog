@@ -21,8 +21,6 @@ const MainPage = () => {
       }
       return 0;
     });
-    // next.sort();
-    console.log(next);
 
     setPosts(next);
   };
@@ -30,9 +28,15 @@ const MainPage = () => {
   const sortByTag = () => {
     const next = [...posts];
     next.sort((a, b) => {
-      return a.title - b.title;
+      if (a.tags[0] < b.tags[0]) {
+        return -1;
+      }
+      if (a.tags[0] > b.tags[0]) {
+        return 1;
+      }
+      return 0;
     });
-    // next.sort();
+
     setPosts(next);
   };
 
