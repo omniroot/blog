@@ -1,4 +1,20 @@
 .postpage {
   width: 100%;
   height: 100%;
+
+  h1,
+  h2,
+  h3 {
+    color: var(--accent);
+  }
+
+  pre {
+    color: white;
+    width: fit-content;
+
+    padding: 5px;
+    background-color: var(--background-2);
+    border: var(--border);
+    border-radius: var(--border-radius);
+  }
 }

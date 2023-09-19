@@ -1,5 +1,7 @@
-import { useParams } from "react-router-dom";
 import styles from "./PostPage.module.scss";
+
+import { useParams } from "react-router-dom";
+
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -22,7 +24,6 @@ const PostPage = () => {
 
   return (
     <div className={styles.postpage}>
-      PostPage: {postName}
       <ReactMarkdown children={post} remarkPlugins={[remarkGfm]} />
     </div>
   );
