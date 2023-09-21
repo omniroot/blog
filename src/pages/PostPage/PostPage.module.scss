@@ -10,8 +10,9 @@
 
   pre {
     color: white;
-    width: fit-content;
+    width: 100%;
 
+    overflow: scroll;
     padding: 5px;
     background-color: var(--background-2);
     border: var(--border);

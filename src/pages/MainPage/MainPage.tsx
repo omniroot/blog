@@ -6,9 +6,11 @@ import { Heading } from "../../components/ui/Heading/Heading";
 import styles from "./MainPage.module.scss";
 
 import data from "@/data/data.json";
+import { useMatchMedia } from "../../hooks/useMatchMedia";
 
 const MainPage = () => {
   const [posts, setPosts] = useState(data);
+  const { isMobile, isDesktop, isTablet } = useMatchMedia();
 
   const sortNormal = () => {
     setPosts(data);
@@ -65,7 +67,24 @@ const MainPage = () => {
         <Button onClick={sortByTag}>tag</Button>
       </Heading>
       <div className={styles.posts}>
-        {posts.map((post) => {
+        {posts.map((post, index) => {
+          if (isMobile) {
+            if (index >= 4) {
+              return null;
+            }
+          }
+          if (isDesktop) {
+            if (index >= 8) {
+              return null;
+            }
+          }
+
+          if (isTablet) {
+            if (index >= 6) {
+              return null;
+            }
+          }
+
           return (
             <Card
               key={post.id}

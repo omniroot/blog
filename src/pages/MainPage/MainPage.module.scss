@@ -3,7 +3,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  // alig: center;
   gap: 10px;
 
   .mainnews {
@@ -14,6 +13,8 @@
   .posts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .soon {
@@ -23,11 +24,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   .mainpage {
     .posts {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
@@ -36,6 +36,15 @@
   .mainpage {
     .posts {
       grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .mainpage {
+    .posts {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
