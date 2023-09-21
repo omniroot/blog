@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/assets/2.png",
+    "image": "/assets/archlinux-dots.svg",
     "title": "ArchLinux After Setup",
     "about": "Command for initial setup arch",
     "tags": ["archlinux"],
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "/assets/test.png",
+    "image": "/assets/test.webp",
     "title": "Ballpapers source",
     "about": "Site with best anime wallpapers",
     "tags": ["wallpaper"],
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "image": "/assets/test.png",
+    "image": "/assets/test.webp",
     "title": "Wallpapers source",
     "about": "Site with best anime wallpapers",
     "tags": ["wallpaper"],
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "image": "/assets/test.png",
+    "image": "/assets/test.webp",
     "title": "Wallpapers source",
     "about": "Site with best anime wallpapers",
     "tags": ["wallpaper"],
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "image": "/assets/test.png",
+    "image": "/assets/test.webp",
     "title": "Wallpapers source",
     "about": "Site with best anime wallpapers",
     "tags": ["wallpaper"],
