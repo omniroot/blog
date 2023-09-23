@@ -30,7 +30,11 @@ const Card: FC<IProps> = ({ image, title: name, about, tags, link }) => {
       </div>
       <div className={styles.taglists}>
         {tags?.map((tag) => {
-          return <div className={styles.tag}>{tag}</div>;
+          return (
+            <div key={tag} className={styles.tag}>
+              {tag}
+            </div>
+          );
         })}
       </div>
     </div>
