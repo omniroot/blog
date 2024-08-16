@@ -1,0 +1,24 @@
+.navlist {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.link {
+  color: var(--foreground-alt);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 200ms ease-out;
+  &.active {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+  &:hover:not(.active) {
+    background-color: var(--foreground-alt);
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,39 @@
+.herosection {
+  display: flex;
+  justify-content: space-between;
+
+  .leftside {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    .name {
+      font-size: 5em;
+      font-weight: bold;
+      margin-top: 8rem;
+    }
+
+    .about {
+      font-size: 2em;
+    }
+
+    .moreinfo {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1rem;
+
+      .projects_button {
+        font-weight: 500;
+        padding: 0.65rem 1.3rem;
+        background-color: var(--accent);
+      }
+
+      .scrolldown_button {
+        color: var(--foreground);
+        background-color: var(--foreground-alt);
+      }
+    }
+  }
+  .heroimg {
+  }
+}

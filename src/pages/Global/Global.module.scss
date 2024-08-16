@@ -1,0 +1,9 @@
+.global {
+  width: var(--screen-width);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
