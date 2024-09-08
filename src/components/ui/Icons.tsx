@@ -5,6 +5,7 @@ import FramerMotionIcon from "~/public/framer.svg?react";
 import ReactRouterIcon from "~/public/reactrouter.svg?react";
 
 import HeartIcon from "~/public/heart.svg?react";
+import YinYangIcon from "~/public/yin_yang.svg?react";
 
 export {
   ViteIcon,
@@ -14,4 +15,4 @@ export {
   FramerMotionIcon,
 };
 
-export { HeartIcon };
+export { HeartIcon, YinYangIcon };

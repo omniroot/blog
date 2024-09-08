@@ -1,0 +1,21 @@
+<svg width="327.628418" height="327.628418" viewBox="0 0 327.628 327.628" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_36_1_dd" x="0.000000" y="0.000000" width="327.628418" height="327.628418" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="8" result="effect_layerBlur_1"/>
+		</filter>
+		<clipPath id="clip36_1">
+			<rect id="yin-yang-icon" width="203.226013" height="203.226013" transform="translate(24.000000 197.016434) rotate(-58.358788)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g filter="url(#filter_36_1_dd)">
+		<g clip-path="url(#clip36_1)">
+			<path id="path" d="M144.27 81.53C121.55 86.84 104.05 99.42 91.79 119.27C79.47 139.19 75.95 160.72 81.44 183.49C92.23 228.9 137.97 257.09 183.4 246.31C205.48 241.07 224.15 227.61 235.99 208.39C247.84 189.17 251.47 166.43 246.22 144.36C235.44 98.93 189.71 70.75 144.27 81.53ZM192.1 166.32C193.94 163.34 196.57 161.44 199.98 160.63C203.4 159.82 206.6 160.34 209.58 162.18C212.57 164.02 214.47 166.65 215.28 170.06C216.09 173.47 215.57 176.67 213.73 179.66C211.89 182.65 209.26 184.55 205.85 185.35C202.43 186.16 199.23 185.65 196.25 183.81C193.26 181.97 191.36 179.34 190.55 175.92C189.74 172.51 190.26 169.31 192.1 166.32ZM97.93 179.58C93.52 161.36 96.24 144.29 106.09 128.34C113.49 116.47 128.3 109.53 139.08 113.1C151.89 117.36 157.83 135.58 155.38 163.11C151.08 211.32 170.23 225.09 182.03 229.01C181.12 229.27 180.41 229.62 179.48 229.84C143.14 238.46 106.56 215.92 97.93 179.58Z" fill="#C5BEB5" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<circle id="circle" r="12.701625" transform="matrix(0.524598 -0.85135 0.85135 0.524598 124.71 154.638)" fill="#C5BEB5" fill-opacity="1.000000"/>
+		</g>
+	</g>
+</svg>

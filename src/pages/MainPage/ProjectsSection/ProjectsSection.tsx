@@ -18,7 +18,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className={styles.projectssection}>
+    <section id="projects" className={styles.projectssection}>
       <h2 className={styles.projects_header}>Projects</h2>
       <div className={styles.projects}>
         {projects.map((project) => (

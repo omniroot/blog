@@ -13,7 +13,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className={styles.herosection}>
+    <section id="hero" className={styles.herosection}>
       {/* <img src="/logo.svg" width={200} /> */}
       <h1 className={styles.name}>OmniRoot</h1>
       <p className={styles.profession}>Frontend web developer</p>
