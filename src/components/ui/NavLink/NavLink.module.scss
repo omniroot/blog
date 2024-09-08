@@ -14,11 +14,11 @@
   padding: 0.5rem 1rem;
   transition: background-color 200ms ease-out;
   &.active {
-    background-color: var(--secondary);
+    background-color: var(--accent);
     color: var(--primary);
   }
   &:hover:not(.active) {
-    background-color: var(--foreground-alt);
+    background-color: var(--secondary);
     color: var(--primary);
   }
 }

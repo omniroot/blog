@@ -2,6 +2,7 @@ import { Header } from "@/components/Header/Header";
 import { Outlet, useLocation } from "react-router-dom";
 import styles from "./Global.module.scss";
 import { useEffect } from "react";
+import { Footer } from "@/components/Footer/Footer";
 
 const onLinkClickhandler = () => {
   console.log("onLinkClickhandler");
@@ -20,6 +21,7 @@ export const Global = () => {
       <main className={styles.main}>
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };

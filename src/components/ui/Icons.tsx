@@ -4,6 +4,8 @@ import ReactIcon from "~/public/react.svg?react";
 import FramerMotionIcon from "~/public/framer.svg?react";
 import ReactRouterIcon from "~/public/reactrouter.svg?react";
 
+import HeartIcon from "~/public/heart.svg?react";
+
 export {
   ViteIcon,
   TypeScriptIcon,
@@ -11,3 +13,5 @@ export {
   ReactRouterIcon,
   FramerMotionIcon,
 };
+
+export { HeartIcon };

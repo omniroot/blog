@@ -8,11 +8,20 @@ interface IProps {
   onClick?: () => void;
   as?: React.ElementType;
   to?: string;
+  href?: string;
+  target?: "_blank" | "self";
 }
-export const Button: FC<IProps> = ({ children, onClick, className, as: Component = "button", to }) => {
+export const Button: FC<IProps> = ({
+  children,
+  onClick,
+  className,
+  as: Component = "button",
+  to,
+  ...rest
+}) => {
   const _class = clsx(styles.button, className);
   return (
-    <Component className={_class} onClick={onClick} to={to}>
+    <Component {...rest} className={_class} onClick={onClick} to={to}>
       {children}
     </Component>
   );

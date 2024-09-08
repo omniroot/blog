@@ -1,0 +1,21 @@
+.footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--foreground-alt);
+    font-weight: 600;
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      color: var(--red);
+    }
+  }
+}

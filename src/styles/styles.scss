@@ -12,10 +12,11 @@
 body {
   --primary: #0b0a0c;
   --secondary: #343234;
-  --secondary-transparent: #343234b4;
+  --secondary-transparent: #34323494;
   --accent: #c5beb5;
   --foreground: var(--accent);
   --foreground-alt: #494242;
+  --red: #fb646d;
 
   --radius: 8px;
   --section-height: calc(100dvh - 80px);
@@ -30,7 +31,7 @@ html,
 body {
   width: var(--screen-width);
   height: 100dvh;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: var(--foreground);
   background-color: var(--primary);
   scroll-behavior: smooth;

@@ -1,0 +1,29 @@
+.contactsection {
+  height: var(--section-height);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  .contact_header {
+    font-family: "Archivo Black";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 87px;
+    letter-spacing: 0px;
+  }
+
+  .contacts {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .goal {
+    color: var(--foreground-alt);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    margin-top: 3rem;
+  }
+}
