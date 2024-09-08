@@ -2,6 +2,7 @@ import { NavLink } from "@/components/ui/NavLink/NavLink";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { Github } from "lucide-react";
+import { Button } from "@/components/ui/Button";
 
 const links = [
   { name: "Home", path: "/" },
@@ -21,14 +22,15 @@ export const Header = () => {
         <NavLink links={links} />
       </nav>
       <div className={styles.rightside}>
-        <Link
+        <Button
           target="_blank"
-          to="https://github.com/omniroot/"
+          href="https://github.com/omniroot/"
+          as={"a"}
           className={styles.github}
         >
           <Github />
           Github
-        </Link>
+        </Button>
       </div>
     </header>
   );
