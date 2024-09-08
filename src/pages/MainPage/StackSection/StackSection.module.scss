@@ -1,0 +1,28 @@
+.stackssection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  height: var(--section-height);
+  padding: 1.25rem;
+
+  .stack_header {
+    font-family: "Archivo Black";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 87px;
+    letter-spacing: 0px;
+  }
+
+  .stack_break {
+    width: 300px;
+    height: 2px;
+    background-color: var(--secondary);
+  }
+
+  .stacks {
+    display: flex;
+    gap: 1rem;
+  }
+}

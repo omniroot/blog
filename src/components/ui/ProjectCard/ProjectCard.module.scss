@@ -1,8 +1,9 @@
 .project_card {
+  width: 350px;
   height: 300px;
   display: flex;
   flex-direction: column;
-  
+
   border: 2px solid var(--foreground-alt);
   border-radius: var(--radius);
   overflow: hidden;
@@ -41,4 +42,3 @@
     border: 2px solid var(--accent);
   }
 }
-
