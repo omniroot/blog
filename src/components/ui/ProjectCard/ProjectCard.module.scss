@@ -1,0 +1,44 @@
+.project_card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  
+  border: 2px solid var(--foreground-alt);
+  border-radius: var(--radius);
+  overflow: hidden;
+
+  transition: border 200ms;
+  cursor: pointer;
+
+  .preview {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--accent);
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #181825;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+    .title {
+      color: var(--accent);
+    }
+
+    .about {
+      color: var(--foreground);
+    }
+  }
+
+  &:hover {
+    border: 2px solid var(--accent);
+  }
+}
+

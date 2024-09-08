@@ -6,12 +6,14 @@ interface IProps {
   children?: React.ReactNode;
   className?: string;
   onClick?: () => void;
+  as?: React.ElementType;
+  to?: string;
 }
-export const Button: FC<IProps> = ({ children, onClick, className }) => {
+export const Button: FC<IProps> = ({ children, onClick, className, as: Component = "button", to }) => {
   const _class = clsx(styles.button, className);
   return (
-    <button className={_class} onClick={onClick}>
+    <Component className={_class} onClick={onClick} to={to}>
       {children}
-    </button>
+    </Component>
   );
 };

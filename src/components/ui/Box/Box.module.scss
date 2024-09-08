@@ -1,0 +1,72 @@
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: var(--radius);
+  transition: border-radius 200ms;
+  & > * {
+    z-index: 5;
+  }
+}
+
+@keyframes tooltipSlideIn {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: -40px;
+  }
+  100% {
+    top: -40px;
+
+    z-index: 6;
+  }
+}
+@keyframes tooltipSlideOff {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+    z-index: -1;
+  }
+}
+
+.tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  color: var(--primary);
+  background-color: var(--accent);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  animation-name: tooltipSlideOff;
+  animation-duration: 500ms;
+  z-index: -1;
+
+  font-family: "Anton";
+  font-size: 1.5rem;
+}
+
+.box:hover .tooltip {
+  animation-name: tooltipSlideIn;
+  animation-duration: 500ms;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.box:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 7;
+}

@@ -1,25 +1,28 @@
 import { Button } from "@/components/ui/Button";
 import styles from "./HeroSection.module.scss";
-import { ArrowDown, ChevronRight } from "lucide-react";
+import { ArrowDown, ArrowUp, ChevronUp, ChevronUpCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
+  const handleScrollToProjects = () => {
+    try {
+      window.scrollTo({ top: window.innerHeight + -80 });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <div className={styles.herosection}>
-      <div className={styles.leftside}>
-        <div className={styles.name}>Yakire</div>
-        <div className={styles.about}>
-          Frontend developer, linux user and anime lover
-        </div>
-        <div className={styles.moreinfo}>
-          <Button className={styles.projects_button}>
-            Projects <ChevronRight size={14} />
-          </Button>
-          <Button className={styles.scrolldown_button}>
-            Scroll down <ArrowDown size={14} />
-          </Button>
-        </div>
+    <section className={styles.herosection}>
+      {/* <img src="/logo.svg" width={200} /> */}
+      <h1 className={styles.name}>OmniRoot</h1>
+      <p className={styles.profession}>Frontend web developer</p>
+      <p className={styles.about}>
+        I'm a 19 year old boy who likes linux, anime, and open source!
+      </p>
+      <div className={styles.arrow_up}>
+        <ChevronUp />
       </div>
-      <img src="/hero.png" alt="anime waifu" className={styles.heroimg} />
-    </div>
+    </section>
   );
 };
