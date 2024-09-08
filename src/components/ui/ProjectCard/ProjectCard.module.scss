@@ -18,10 +18,10 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--accent);
+    color: var(--foreground);
     font-size: 1.2em;
     font-weight: bold;
-    background-color: #181825;
+    background-color: var(--secondary-transparent);
   }
 
   .content {
