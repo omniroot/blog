@@ -1,28 +1,26 @@
-import { Button } from "@/components/ui/Button";
 import styles from "./HeroSection.module.scss";
-import { ArrowDown, ArrowUp, ChevronUp, ChevronUpCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ChevronUp } from "lucide-react";
+import { motion } from "framer-motion";
 
 export const HeroSection = () => {
-  const handleScrollToProjects = () => {
-    try {
-      window.scrollTo({ top: window.innerHeight + -80 });
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   return (
-    <section id="hero" className={styles.herosection}>
+    <motion.section
+      id="hero"
+      className={styles.herosection}
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+    >
       {/* <img src="/logo.svg" width={200} /> */}
       <h1 className={styles.name}>OmniRoot</h1>
-      <p className={styles.profession}>Frontend web developer</p>
-      <p className={styles.about}>
+      <motion.h2 className={styles.profession}>
+        Frontend web developer
+      </motion.h2>
+      <h2 className={styles.about}>
         I'm a 19 year old boy who likes linux, anime, and open source!
-      </p>
+      </h2>
       <div className={styles.arrow_up}>
         <ChevronUp />
       </div>
-    </section>
+    </motion.section>
   );
 };
