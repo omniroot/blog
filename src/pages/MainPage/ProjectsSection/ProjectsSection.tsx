@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/Button";
 import styles from "./ProjectsSection.module.scss";
-import { ArrowDown, ChevronRight } from "lucide-react";
 import { ProjectCard } from "@/components/ui/ProjectCard/ProjectCard";
 import { motion } from "framer-motion";
 

@@ -1,4 +1,4 @@
-import { ArrowRight, Link } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import styles from "./ContactCard.module.scss";
 import { FC } from "react";
 import { Button } from "@/components/ui/Button";
@@ -8,10 +8,6 @@ interface IContactCardProps {
   contact: string;
   link: string;
 }
-
-const onGoToClick = (link: string) => {
-  window.open(link, "_blank");
-};
 
 export const ContactCard: FC<IContactCardProps> = ({
   title,

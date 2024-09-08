@@ -12,6 +12,6 @@ export const router = createBrowserRouter(
     <Route path="/" element={<Global />}>
       <Route path="/" element={<MainPage />} />
       <Route path="/posts" element={<PostsPage />} />
-    </Route>
-  )
+    </Route>,
+  ),
 );

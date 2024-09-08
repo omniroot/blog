@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header/Header";
 import { Outlet, useLocation } from "react-router-dom";
 import styles from "./Global.module.scss";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Footer } from "@/components/Footer/Footer";
 import { YinYang } from "@/components/ui/YinYang/YinYang";
 
@@ -9,7 +9,6 @@ const onLinkClickhandler = () => {
   console.log("onLinkClickhandler");
   window.scroll({ top: -100 });
 };
-const height = window.innerHeight - 260;
 
 export const Global = () => {
   const path = useLocation().pathname;

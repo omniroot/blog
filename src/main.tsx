@@ -1,4 +1,3 @@
-import { MainPage } from "@/pages/MainPage/MainPage";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@/styles/styles.scss";

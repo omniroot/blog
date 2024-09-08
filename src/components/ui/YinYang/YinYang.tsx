@@ -1,6 +1,5 @@
 import { YinYangIcon } from "@/components/ui/Icons";
 import styles from "./YinYang.module.scss";
-import { forwardRef } from "react";
 import clsx from "clsx";
 
 export const YinYang = () => {

@@ -2,10 +2,12 @@
   &:hover {
     color: var(--primary);
     background-color: var(--foreground-alt);
-    transition: background-color 400ms, color 400ms;
+    transition:
+      background-color 400ms,
+      color 400ms;
     cursor: pointer;
     border: none;
     border-radius: 8px;
-  padding: 5px;
+    padding: 5px;
   }
 }
