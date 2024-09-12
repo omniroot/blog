@@ -24,10 +24,6 @@ body {
   --screen-width: 100dvw;
 }
 
-.chrome {
-  // --screen-width: calc(100dvw - 0.5rem);
-}
-
 html,
 body {
   width: var(--screen-width);
@@ -36,6 +32,12 @@ body {
   color: var(--foreground);
   background-color: var(--primary);
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.chrome {
+  // --screen-width: calc(100dvw - 0.5rem);
+  // overflow-x: auto;
 }
 
 :root {
