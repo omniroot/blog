@@ -11,11 +11,7 @@ import { motion } from "framer-motion";
 
 export const StackSection = () => {
   return (
-    <motion.section
-      initial={{ y: -100 }}
-      whileInView={{ y: 0 }}
-      className={styles.stackssection}
-    >
+    <section className={styles.stackssection}>
       <h2 className={styles.stack_header}>Stack</h2>
       <StackCard icon={<ReactIcon />} title="React" variant="big" />
       <div className={styles.stack_break} />
@@ -25,6 +21,6 @@ export const StackSection = () => {
         <StackCard icon={<FramerMotionIcon />} title="Framer Motion" />
         <StackCard icon={<ReactRouterIcon />} title="React Router" />
       </div>
-    </motion.section>
+    </section>
   );
 };

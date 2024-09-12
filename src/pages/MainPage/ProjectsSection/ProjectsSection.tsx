@@ -17,12 +17,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <motion.section
-      initial={{ y: -100 }}
-      whileInView={{ y: 0 }}
-      id="projects"
-      className={styles.projectssection}
-    >
+    <section id="projects" className={styles.projectssection}>
       <h2 className={styles.projects_header}>Projects</h2>
       <div className={styles.projects}>
         {projects.map((project) => (
@@ -34,6 +29,6 @@ export const ProjectsSection = () => {
           />
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };

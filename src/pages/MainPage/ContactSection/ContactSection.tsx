@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 
 export const ContactSection = () => {
   return (
-    <motion.section
-      initial={{ y: -200 }}
-      whileInView={{ y: 0 }}
-      className={styles.contactsection}
-    >
+    <section className={styles.contactsection}>
       <h2 className={styles.contact_header}>Contact</h2>
       <div className={styles.contacts}>
         <ContactCard
@@ -30,6 +26,6 @@ export const ContactSection = () => {
       <p className={styles.goal}>
         私の人生の主な目標は、95% の人々のように生きることではありません
       </p>
-    </motion.section>
+    </section>
   );
 };
