@@ -32,3 +32,11 @@
     font-weight: 600;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .projectssection {
+    .projects {
+      flex-direction: column;
+    }
+  }
+}
