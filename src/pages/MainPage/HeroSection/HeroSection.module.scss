@@ -38,3 +38,25 @@
     bottom: 10px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .herosection {
+    justify-content: start;
+    gap: 0rem;
+    .name {
+      font-size: 70px;
+      line-height: 100px;
+      margin-top: 10rem;
+    }
+    .profession {
+      font-size: 25px;
+      margin-top: 0;
+    }
+    .about {
+      width: 100%;
+      padding: 0 1rem;
+      font-size: 20px;
+      margin-top: 0;
+    }
+  }
+}
