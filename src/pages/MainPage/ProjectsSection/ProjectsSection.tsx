@@ -1,6 +1,5 @@
 import styles from "./ProjectsSection.module.scss";
 import { ProjectCard } from "@/components/ui/ProjectCard/ProjectCard";
-import { motion } from "framer-motion";
 
 const projects = [
   {

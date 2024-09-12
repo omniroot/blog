@@ -1,6 +1,5 @@
 import styles from "./HeroSection.module.scss";
 import { ChevronUp } from "lucide-react";
-import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
