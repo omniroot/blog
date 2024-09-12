@@ -7,7 +7,6 @@ import {
   TypeScriptIcon,
   ViteIcon,
 } from "@/components/ui/Icons";
-import { motion } from "framer-motion";
 
 export const StackSection = () => {
   return (

@@ -27,3 +27,16 @@
     margin-top: 3rem;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .contactsection {
+    .contacts {
+      flex-direction: column;
+    }
+
+    .goal {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+}

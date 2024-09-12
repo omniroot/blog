@@ -26,3 +26,11 @@
     gap: 1rem;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .stackssection {
+    .stacks {
+      flex-direction: column;
+    }
+  }
+}

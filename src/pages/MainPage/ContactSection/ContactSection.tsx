@@ -1,6 +1,5 @@
 import { ContactCard } from "@/components/ui/ContactCard/ContactCard";
 import styles from "./ContactSection.module.scss";
-import { motion } from "framer-motion";
 
 export const ContactSection = () => {
   return (

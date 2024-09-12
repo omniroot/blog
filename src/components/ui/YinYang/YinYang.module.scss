@@ -3,3 +3,9 @@
   transition: translate 400ms;
   translate: 80vw 60vh;
 }
+
+@media screen and (max-width: 640px) {
+  .yinyang {
+    display: none;
+  }
+}
